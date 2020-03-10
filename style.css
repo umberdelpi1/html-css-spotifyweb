@@ -1,0 +1,38 @@
+/* REGOLE GENERALI */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  height: 100vh;
+}
+
+/* nav-vertical */
+.nav1 {
+  height: 800px;
+  width: 200px;
+  display: flex;
+  /* flex-direction: column; */
+  /* debug */
+  border: solid black 1px;
+  background-color: black;
+}
+
+#logo-spotify {
+  height: auto;
+  width: 100px;
+}
+
+/*  Cover */
+
+/* footer nav */
+.footer-nav {
+  height: 150px;
+  width: 100%;
+  display: flex;
+  position: fixed;
+  /* debug */
+  border: solid black 1px;
+  background-color: rgb(55, 55, 55);
+}
