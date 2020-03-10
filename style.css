@@ -5,34 +5,50 @@
   box-sizing: border-box;
 }
 body {
-  height: 100vh;
+  clear: both;
 }
+
+header {
+  display: flex;
+}
+
 
 /* nav-vertical */
 .nav1 {
   height: 800px;
-  width: 200px;
+  width: 10%;
   display: flex;
+  float: left;
   /* flex-direction: column; */
   /* debug */
   border: solid black 1px;
-  background-color: black;
+  background-color: red;
 }
 
-#logo-spotify {
-  height: auto;
-  width: 100px;
+.cover {
+  height: 800px;
+  width: 90%;
+  display: flex;
+  float: left;
+  /* flex-direction: column; */
+  /* debug */
+  border: solid black 1px;
+  background-color: green;
 }
+
+
 
 /*  Cover */
+
+
+
 
 /* footer nav */
 .footer-nav {
   height: 150px;
   width: 100%;
-  display: flex;
-  position: fixed;
+
   /* debug */
-  border: solid black 1px;
+  
   background-color: rgb(55, 55, 55);
 }
