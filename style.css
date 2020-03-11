@@ -29,7 +29,8 @@ header {
 .nav2 {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  justify-content: space-between;
+
   line-height: 40px;
   padding-left: 20px;
 }
@@ -50,7 +51,7 @@ header {
 
 #space1 {
   padding-top: 10%;
-  font-weight: bold; 
+  font-weight: bold;
 }
 
 #space2 {
@@ -113,6 +114,11 @@ button {
   color: white;
   font-size: 12px;
   margin-right: 10px;
+}
+
+.aaa {
+  display:flex
+  float:left;
 }
 
 
