@@ -11,7 +11,7 @@ body {
 
 
 
-/* nav-vertical */
+/* -------------------------------------------- nav-vertical */
 header {
   height: auto;
   width: 20%;
@@ -70,15 +70,36 @@ header {
 
 
 
-/*  Cover */
+/*  ----------------------------------------- Cover */
 
 main {
-  height: auto;
+  height: 400px;
   width: 80%;
-  float: left;
-  /* flex-direction: column; */
+  float: right;
   /* debug */
   background-color: green;
+  z-index: 1;
+}
+
+.cover {
+  height: 200px;
+  width: 100%;
+  background-color: rgba(44, 45, 45, 0.65);
+  display: flex;
+  position: fixed;
+  justify-content: flex-end;
+
+  z-index: 2;
+}
+
+button {
+  height: 40px;
+    width: 200px;
+    border-radius: 20px;
+    border: solid white 1px;
+    background-color: transparent;
+    color: white;
+    font-size: 15px;
 }
 
 
@@ -86,6 +107,7 @@ main {
 
 
 /* footer nav */
+
 /* .footer-nav {
   height: 150px;
   width: 100%;
