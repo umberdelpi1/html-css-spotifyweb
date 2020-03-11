@@ -3,6 +3,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Montserrat", "sans-serif";
 }
 body {
   clear: both;
@@ -16,29 +17,54 @@ header {
 /* nav-vertical */
 .nav1 {
   height: 800px;
-  width: 10%;
+  width: 20%;
   display: flex;
   float: left;
-  /* flex-direction: column; */
+  flex-direction: column;
+  align-items: center;
   /* debug */
-  border: solid black 1px;
-  background-color: red;
+  background-color: black;
 }
+
+.nav1 p {
+  color: white;
+}
+
+
+#logo-spotify {
+  height: 50px;
+  width: 160px;
+
+
+}
+
+.logo {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  height: 25px;
+  width: 25px;
+
+
+}
+
+
+
+
+/*  Cover */
 
 .cover {
   height: 800px;
-  width: 90%;
+  width: 80%;
   display: flex;
   float: left;
   /* flex-direction: column; */
   /* debug */
-  border: solid black 1px;
   background-color: green;
 }
 
 
 
-/*  Cover */
 
 
 
@@ -49,6 +75,6 @@ header {
   width: 100%;
 
   /* debug */
-  
+
   background-color: rgb(55, 55, 55);
 }
