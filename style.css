@@ -5,19 +5,17 @@
   box-sizing: border-box;
   font-family: "helvetica", "sans-serif";
 }
+
 body {
   clear: both;
 }
 
-
-
 /* -------------------------------------------- nav-vertical */
 header {
-  height: auto;
-  width: 20%;
+  height: calc(100vh - 100px);
+  width: 200px;
   float: left;
-  position: fixed;
-  /* debug */
+  /* position: fixed; */
   background-color: black;
 }
 .nav1 {
@@ -30,7 +28,6 @@ header {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-
   line-height: 40px;
   padding-left: 20px;
 }
@@ -55,8 +52,9 @@ header {
 }
 
 #space2 {
-  padding-top: 60%;;
+  padding-top: 100%;
   border-bottom: solid white 1px;
+  font-size: 10px;
 }
 
 
@@ -72,29 +70,28 @@ header {
 }
 
 .logo-down {
-  height: 25px;
-  width: 25px;
+  height: 15px;
+  width: 15px;
   margin-top: 20px;
 }
 
 
 
-/*  ----------------------------------------- Cover */
+/*  ----------------------------------------- sezione main */
 
 main {
-  height: auto;
-  width: 80%;
-  float: right;
-  overflow: hidden;
-  padding-top: 110px;
-  /* debug */
+  height: calc(100vh - 100px);
+  width: calc(100vw - 200px);
+  float: left;
   background-color: rgb(31, 35, 40);
+  padding-top: 110px;
+  overflow: auto;
 
 }
-
-.cover {
+/* -------------------- sezione nav fixed con trasparenza e button upgrade */
+.nav-fixed-up-opacity {
   height: 100px;
-  width: 80%;
+  width: calc(100vw - 200px);
   background-color: rgba(0, 0, 0, 0.5);
   display: flex;
   align-items: center;
@@ -115,22 +112,56 @@ button {
   font-size: 12px;
   margin-right: 10px;
 }
+/* ------------------------------- lista album */
+.list-album {
+  display: flex;
+  justify-content: center;
+  width: calc(100vw - 200px);
 
-.aaa {
-  display:flex
-  float:left;
+}
+
+.list-album li  {
+  list-style-type: none;
+  display:inline-block;
+  color: white;
+  padding-right: 20px;
+  padding: 20px 20px;
+}
+/* ------------------------------ contenuto album */
+.container-album {
+  display:flex;
+  flex-wrap: wrap;
+}
+
+.album {
+  margin: 10px;
+  width: 15%;
+}
+
+.album h3 {
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  padding-top: 15px;
+}
+.album p {
+  color: rgba(167, 167, 167, 0.73);
+  text-align: center;
+  font-size: 12px;
+  padding-top: 10px;
+}
+
+.album img {
+  width: 100%;
 }
 
 
 
 
+/* ----------------------------------- footer nav inferiore */
 
-/* footer nav */
-
-/* .footer-nav {
-  height: 150px;
+footer {
+  height: 100px;
   width: 100%;
-
-  /* debug */
-
-  /* background-color: rgb(55, 55, 55);
+  float: left;
+  background-color: rgb(54, 54, 54);
