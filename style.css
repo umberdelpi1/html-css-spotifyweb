@@ -123,14 +123,17 @@ button {
 .list-album li  {
   list-style-type: none;
   display:inline-block;
-  color: white;
-  padding-right: 20px;
-  padding: 20px 20px;
+  color: rgba(167, 167, 167, 0.73);
+  padding: 20px 9px;
+  font-size: 13px;
 }
+
+
 /* ------------------------------ contenuto album */
 .container-album {
   display:flex;
   flex-wrap: wrap;
+  margin-left: 10px;
 }
 
 .album {
@@ -153,7 +156,58 @@ button {
 
 .album img {
   width: 100%;
+
 }
+
+/* ------------------------------ container album | sezione 2 */
+
+.text-cover2-h3 {
+  color:white;
+  font-size: 22px;
+  padding-top: 40px;
+  padding-left: 30px;
+  padding-bottom: 5px;
+  width: 100%;
+}
+
+#text-cover2-undertitle {
+  color:rgba(167, 167, 167, 0.73);
+  font-size: 12px;
+  padding-bottom: 10px;
+  padding-left: 30px;
+  width: 100%;
+}
+
+.album2 {
+  margin: 10px;
+  width: 15%;
+}
+
+.album2 h3 {
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  padding-top: 15px;
+}
+.album2 p {
+  color: rgba(167, 167, 167, 0.73);
+  text-align: center;
+  font-size: 12px;
+  padding-top: 10px;
+}
+
+.album2 img {
+  width: 100%;
+  margin-left: 20px;
+}
+
+/* ------------------------------ container album | sezione 3 */
+
+.album-circle {
+  width: 100%;
+  border-radius: 50%;
+}
+
 
 
 
