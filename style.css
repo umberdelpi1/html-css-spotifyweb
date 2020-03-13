@@ -236,20 +236,89 @@ footer {
   float: left;
   background-color: rgb(54, 54, 54);
   display: flex;
-  flex-direction: row;
+  flex-wrap: wrap;
 }
-
-/* .footer-nav {
-  height: auto;
-  width: 100%;
+/* ------------------------------------ BLOCCO 1 */
+.blocco1 {
+  background-color: red;
+  border: solid black 1px;
+  width: 25%;
+  height: 100px;
   display: flex;
-  flex-direction: row;
-
-} */
-
-#size-img-footer-sx {
+  justify-content: space-between;
+  align-items: center;
+}
+#img-footer-sx {
   height: 50px;
   width: 50px;
+}
+
+.text-footer-sx h3 {
+  vertical-align: baseline;
+}
+
+/* ------------------------------------ BLOCCO 2 */
+.blocco2 {
+  background-color: green;
+  border: solid black 1px;
+  width: 50%;
+  height: 100px;
+}
+
+.sotto-blocco2-up {
+  border: solid black 1px;
+  height: 50px;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0 240px;
+}
+
+.sotto-blocco-2-down {
+border: solid black 1px;
+height: 50px;
+width: auto;
+}
+
+.sotto-blocco2-up i:nth-child(3) {
+  color: white;
+  font-size: 30px;
+}
+
+.sotto-blocco2-up i {
+  color: white;
+  font-size: 15px;
+}
+
+
+
+
+
+/* ------------------------------------ BLOCCO 3 */
+.blocco3 {
+  background-color: pink;
+  border: solid black 1px;
+  width: 25%;
+  height: 100px;
+}
+
+.sotto-blocco2-down {
+  border: solid black 1px;
+  height: 50px;
+  width: auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+
+.barra-player {
+  width: 80%;
+  height: 4px;
+  border-radius: 4px;
+  background-color: rgba(255, 255, 255, 0.2);
+  cursor: pointer;
 }
 
 
