@@ -41,7 +41,7 @@ header {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  padding: 20px 20px;
+  padding: 50px 20px;
   /* debug */
   /* background-color: red; */
 
@@ -137,8 +137,8 @@ header {
 
 
 #logo-spotify {
-  height: 50px;
-  width: 160px;
+  height: 40px;
+  width: 130px;
   margin: 20px 0;
 }
 
@@ -257,8 +257,31 @@ button:hover {
 }
 
 .album {
+  position: relative;
+  cursor: pointer;
   margin: 10px;
   width: 15%;
+}
+.overlay {
+  display: none;
+}
+
+.overlay i {
+  color: white;
+}
+
+.album:hover .overlay {
+  height: 56%;
+  width: 100%;
+  background-color: rgba(0,0,0,.53);
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 0;
+  font-size: 50px;
 }
 
 
@@ -279,11 +302,7 @@ button:hover {
   width: 100%;
 }
 
-.overlay {
-  height: 50px;
-  width: 100%;
-  background-color: red;
-}
+
 
 /* ------------------------------ container album | sezione 2 */
 
@@ -539,19 +558,19 @@ align-items: center;
     height: 30px;
     width: 30px;
     margin-top: 20px;
-    margin-left: 20px;
+    margin-left: 7px;
   }
 
   .logo-down {
     height: 30px;
     width: 30px;
     margin-top: 20px;
-    margin-left: 20px;
+    margin-left: 7px;
   }
 
   #playlist {
     display: none;
-    
+
   }
 
   #logo-spotify {
@@ -612,24 +631,11 @@ align-items: center;
     font-size: 10px;
   }
 
+  .album {
+    position: relative;
+    cursor: pointer;
+    margin: 10px;
+    width: 45%;
+  }
+
 }
-
-/* @media all and ( max-widht: 795px ) {
-
-  .list-album {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    width: calc(100vw - 80px);
-
-  }
-
-  .list-album li  {
-    list-style-type: none;
-    color: rgba(167, 167, 167, 0.73);
-    padding: 20px 9px;
-    font-size: 10px;
-
-  }
-
-} */
