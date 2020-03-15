@@ -19,9 +19,23 @@ header {
   height: calc(100vh - 100px);
   width: 200px;
   float: left;
+    overflow: auto;
   /* position: fixed; */
   background-color: black;
 }
+
+.nav-first {
+  height: 75%;
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+
+  /* debug */
+  /* background-color: grey; */
+}
+
+
+
 .nav1 {
   height: 10%;
   display: flex;
@@ -29,7 +43,7 @@ header {
   align-items: center;
   padding: 20px 20px;
   /* debug */
-  background-color: red;
+  /* background-color: red; */
 
 }
 .nav2 {
@@ -40,11 +54,11 @@ header {
   line-height: 30px;
   padding-left: 20px;
   /* debug */
-  background-color: green;
+  /* background-color: green; */
 
 }
 
-.nav2 ul li {
+.nav3 ul li {
   color: white;
   line-height: 35px;
   list-style-type: none;
@@ -55,15 +69,12 @@ header {
 }
 
 .nav3 {
-  height: 10%;
-  /* debug */
-  background-color: pink;
+  height: 70%;
+  line-height: 20px;
 }
 
 .nav4 {
-  height: 80%;
-  /* debug */
-  background-color: purple;
+  height: 10%;
 }
 
 .space0 {
@@ -72,8 +83,17 @@ header {
   justify-content: flex-start;
 }
 
+#space2 span {
+  color: white;
+  font-size: 10px;
 
+}
 
+#space3 span {
+  color: white;
+  font-size: 15px;
+  font-weight: bold;
+}
 
 .space0 p {
   padding-left: 5px;
@@ -86,6 +106,7 @@ header {
   padding-top: 10%;
   font-weight: bold;
   font-size: 15px;
+  color: white;
 }
 
 #playlist li {
@@ -106,10 +127,20 @@ header {
   margin: 20px 0;
 }
 
+#crea-playlist {
+  color: rgba(167, 167, 167, 0.73);
+}
+
 .logo {
   height: 25px;
   width: 25px;
   margin-bottom: 20px;
+}
+
+.logo-up {
+  height: 15px;
+  width: 15px;
+  margin-top: 20px;
 }
 
 .logo-down {
@@ -122,7 +153,7 @@ header {
   font-size: 40px;
 }
 
-/* media query */
+/* ----------------------------------------- media query */
 
 #logo-spotify-singolo {
   display:none;
@@ -456,8 +487,29 @@ align-items: center;
       display: none;
     }
 
-    #space2 p {
+    #space2 span {
       display: none;
+    }
+
+    #space3 span {
+      color: white;
+      font-size: 15px;
+      font-weight: bold;
+      display: none;
+    }
+
+    .logo-up {
+      height: 30px;
+      width: 30px;
+      margin-top: 20px;
+      margin-left: 20px;
+    }
+
+    .logo-down {
+      height: 30px;
+      width: 30px;
+      margin-top: 20px;
+      margin-left: 20px;
     }
 
     #playlist {
@@ -487,5 +539,41 @@ align-items: center;
       background-color: black;
     }
 
+    main {
+      height: calc(100vh - 100px);
+      width: calc(100vw - 80px);
+      float: left;
+      background-color: rgb(31, 35, 40);
+      padding-top: 110px;
+      overflow: auto;
+
+    }
+
+    .nav-fixed-up-opacity {
+      height: 100px;
+      width: calc(100vw - 80px);
+      background-color: rgba(0, 0, 0, 0.5);
+      display: flex;
+      align-items: center;
+      flex-direction: row;
+      justify-content: flex-end;
+      position: fixed;
+      top: 0;
+      right:0;
+    }
+
+    .list-album {
+      display: flex;
+      justify-content: center;
+      width: calc(100vw - 80px);
+    }
+
+    .list-album li  {
+      list-style-type: none;
+      display:inline-block;
+      color: rgba(167, 167, 167, 0.73);
+      padding: 20px 9px;
+      font-size: 10px;
+    }
 
   }
