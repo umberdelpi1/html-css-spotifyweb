@@ -104,6 +104,7 @@ header {
 
 #space1 {
   padding-top: 10%;
+  padding-left: 20px;
   font-weight: bold;
   font-size: 15px;
   color: white;
@@ -112,6 +113,7 @@ header {
 #playlist li {
   color: rgba(167, 167, 167, 0.73);
   font-size: 13px;
+  padding-left: 20px;
 }
 
 #space2 {
@@ -129,6 +131,7 @@ header {
 
 #crea-playlist {
   color: rgba(167, 167, 167, 0.73);
+  padding: 10px 20px;
 }
 
 .logo {
